@@ -94,6 +94,8 @@ cap = cv2.VideoCapture(webcam_path)
 
 # Variable to control inference
 perform_inference = False
+# Variable to control multicolor boxes
+multicolor_box = False
 # Initialize contrast and brightness values
 contrast = 1.0
 brightness = 0
