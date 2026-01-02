@@ -50,25 +50,65 @@ This repository contains two Python scripts designed for real-time object detect
    - `--webcam_path`: ID of the webcam (default: 1).
 
 ## Dependencies
-- Python 3.x
-- OpenCV
-- Ultralytics (YOLOv8)
-- Tkinter
+- Python 3.7 or higher
+- opencv-python (>=4.0.0)
+- ultralytics (>=8.0.0) - YOLOv8
+- numpy (>=1.19.0)
+- psutil (>=5.0.0)
+- tkinter (for GUI - usually included with Python)
 
 ## Installation
+
+### Option 1: Installation with Conda (Recommended)
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/juanjosecas/YOLO-cell-count.git
    ```
+
 2. Navigate to the project directory:
    ```bash
-   cd repository
+   cd YOLO-cell-count
    ```
-3. Install the required dependencies:
+
+3. Create a conda environment:
    ```bash
-   pip install opencv-python ultralytics
+   conda create -n yolo-cell-count python=3.9
    ```
+
+4. Activate the conda environment:
+   ```bash
+   conda activate yolo-cell-count
+   ```
+
+5. Install the package and its dependencies:
+   ```bash
+   pip install -e .
+   ```
+
+### Option 2: Installation with pip (Alternative)
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/juanjosecas/YOLO-cell-count.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd YOLO-cell-count
+   ```
+
+3. Install the package and its dependencies:
+   ```bash
+   pip install -e .
+   ```
+
+### Manual Installation of Dependencies
+
+If you prefer to install dependencies manually:
+```bash
+pip install opencv-python ultralytics numpy psutil
+```
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
