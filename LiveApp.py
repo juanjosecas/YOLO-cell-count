@@ -54,8 +54,19 @@ def detect_web_cameras():
 detected_cameras = detect_web_cameras()
 print("Detected web cameras:", detected_cameras)
 
+# Instructions text as a constant for better maintainability
+INSTRUCTIONS_TEXT = """1. Configure los parámetros según sus necesidades
+2. Haga clic en "Ejecutar Script" para iniciar la detección
+3. En la ventana de detección:
+   - Presione 'q' para salir
+   - Presione 'i' para activar/desactivar inferencia
+   - Presione 'm' para colores multicolor
+   - Presione 'c'/'v' para ajustar contraste
+   - Presione 'b'/'n' para ajustar brillo
+   - Presione 'p' para tomar captura de pantalla"""
+
 # Function to validate numeric input
-def validate_float(value, min_val=0.0, max_val=10.0):
+def validate_float(value, min_val, max_val):
     """Valida que el valor sea un número flotante dentro del rango especificado"""
     try:
         num = float(value)
@@ -63,7 +74,7 @@ def validate_float(value, min_val=0.0, max_val=10.0):
     except ValueError:
         return False
 
-def validate_int(value, min_val=0, max_val=10000):
+def validate_int(value, min_val, max_val):
     """Valida que el valor sea un entero dentro del rango especificado"""
     try:
         num = int(value)
@@ -260,17 +271,7 @@ status_label.grid(row=4, column=0, columnspan=2, pady=(10, 0))
 instructions_frame = ttk.LabelFrame(main_frame, text="Instrucciones", padding="10")
 instructions_frame.grid(row=5, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(15, 0))
 
-instructions_text = """1. Configure los parámetros según sus necesidades
-2. Haga clic en "Ejecutar Script" para iniciar la detección
-3. En la ventana de detección:
-   - Presione 'q' para salir
-   - Presione 'i' para activar/desactivar inferencia
-   - Presione 'm' para colores multicolor
-   - Presione 'c'/'v' para ajustar contraste
-   - Presione 'b'/'n' para ajustar brillo
-   - Presione 'p' para tomar captura de pantalla"""
-
-instructions_label = ttk.Label(instructions_frame, text=instructions_text, 
+instructions_label = ttk.Label(instructions_frame, text=INSTRUCTIONS_TEXT, 
                               justify=tk.LEFT, font=('Arial', 9))
 instructions_label.pack()
 
