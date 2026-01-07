@@ -3,7 +3,7 @@
 ## 🎯 Objetivo
 Esta guía te ayudará a usar la interfaz gráfica para detectar y contar células usando YOLO.
 
-## 📋 Prerequisitos
+## 📋 Prerrequisitos
 
 Antes de empezar, asegúrate de tener instalado:
 1. Python 3.7 o superior
