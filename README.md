@@ -2,6 +2,20 @@
 
 This repository contains two Python scripts designed for real-time object detection using a pre-trained YOLOv8 model. The application provides a graphical user interface (GUI) for configuring inference parameters and running the detection script.
 
+## 🚀 Quick Start
+
+**Prerequisites:** Make sure you have installed the dependencies (see [Installation](#installation) section below).
+
+Para usar la interfaz gráfica (GUI) / To use the graphical interface (GUI):
+
+```bash
+python LiveApp.py
+```
+
+La interfaz gráfica les permitirá configurar todos los parámetros y ejecutar la detección de células de manera visual y sencilla.
+
+*The graphical interface will allow you to configure all parameters and run cell detection in a visual and simple way.*
+
 ## Overview
 
 1. **LiveApp.py**: A Tkinter-based GUI application for configuring parameters and running the inference script (`live_script.py`). It allows users to dynamically set various parameters and execute the script with the specified configurations.
