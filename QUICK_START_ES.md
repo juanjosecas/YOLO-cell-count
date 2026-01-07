@@ -52,8 +52,10 @@ Configura los siguientes parámetros según tus necesidades:
   - Valor por defecto: 0.6
 
 - **Webcam ID** (0-10): ID de la cámara a usar
-  - Valor por defecto: 0
-  - Usa el número mostrado en "Cámaras Detectadas"
+  - Valor por defecto en GUI: 0
+  - Valor por defecto en script directo: 1
+  - **Recomendación:** Usa el número mostrado en "Cámaras Detectadas"
+  - Nota: 0 es generalmente la cámara integrada, 1+ son cámaras externas
 
 #### 🎮 Botones
 
