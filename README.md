@@ -4,13 +4,15 @@ This repository contains two Python scripts designed for real-time object detect
 
 ## 🚀 Quick Start
 
+**Prerequisites:** Make sure you have installed the dependencies (see [Installation](#installation) section below).
+
 Para usar la interfaz gráfica (GUI) / To use the graphical interface (GUI):
 
 ```bash
 python LiveApp.py
 ```
 
-La interfaz gráfica le permitirá configurar todos los parámetros y ejecutar la detección de células de manera visual y sencilla.
+La interfaz gráfica les permitirá configurar todos los parámetros y ejecutar la detección de células de manera visual y sencilla.
 
 *The graphical interface will allow you to configure all parameters and run cell detection in a visual and simple way.*
 
